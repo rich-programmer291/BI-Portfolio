@@ -1,0 +1,262 @@
+:root {
+    --primary-color: rgb(173, 140, 243);
+    ---primary-highlight: rgb(173,140,243,0.3);
+    --section-height: 800px;
+    --primary-font: 'Nunito Sans', sans-serif;
+    --secondary-font: 'Poltawski Nowy', serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    margin: 0;
+    background-color: #101010;
+}
+
+#nav {
+    background-color: none;
+    margin: 2% 7% 0 7%;
+    padding: 1% 0;
+    align-items: center;
+}
+
+.navbar{
+    color:white;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    font-size: 25px;
+    display: inline;
+    text-align: right;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 2%;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+.highlight{
+    color: var(--primary-color);
+
+}
+
+.nav-brand{
+    font-size: 35px;
+    /* margin-right: 60%; */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* HOME PAGE */
+#home{
+    height: fit-content;
+    display: flex;
+    margin: 2% 7% 0 7%;
+}
+
+.left{
+    width: 65%;
+    padding: 0 0 0 0;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    color: white;
+}
+
+.left-info{
+    text-align: justify;
+}
+
+.left-info .intro{
+    font-size: 45px;
+    font-family: var(--secondary-font);
+    margin: 0 0;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    line-height: 46.5px;
+    
+}
+
+.btn{
+    padding: 18px 18px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1.7px;
+    border: 2px solid var(--primary-color) ;
+    border-radius: 50px;
+    margin-right: 2%;
+    color: white;
+    background-color: #101010;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+.main-btn{
+    background-color: var(--primary-color);
+}
+
+.main-btn:hover{
+    color: #101010;
+}
+
+.right{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    width: auto;
+}
+
+.right-img{
+    height: max-content;
+    transform: scaleX(-1);
+    width: 380px;
+    opacity: 90%;
+    padding: 0 15% 5% 0;
+}
+
+.divide{
+    height: 3px;
+    width: auto;
+    background-color: var(--primary-color);
+    border: none;
+    margin: 3% 7%;
+}
+/* SKILLS SECTION */
+#skills{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 7%;
+}
+    
+.skills{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+
+    }
+
+.row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px ;
+}
+
+.skill-box{
+    display: grid; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+   
+    height: auto;
+    width: 33%;
+    background-color: #101010;
+    padding: 30px 0;
+    color: white;
+}
+
+.skill-box:hover{
+    transform: translateY(-15px);
+    border: 1px solid var(--primary-color);
+    box-shadow: 2px 4px 4px 4px var(--primary-color);
+}
+.skill-img{
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    margin: 15px 0;
+}
+
+.box-heading{
+    color: white;
+    font-weight: 1000;
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.skill-info{
+    letter-spacing: 3px;
+    
+}
+
+.heading{
+    font-size: 35px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+}
+
+
+/*PROJECTS*/
+
+#projects{
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 7%;
+}
+
+.card{
+    border-radius: 20px;
+    padding: 20px 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text{
+    font-weight: 700;
+    
+    font-size: 25px;
+    margin: none;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+.card:hover{
+    transform: translateY(-18px);
+    border: 2px solid var(--primary-color);
+}
+
+.card-img{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.card-img:hover{
+    transform: scale(1.35);
+}
+
+.card-info{
+    margin: none;
+    line-height: 0;
+    color: white;
+}
